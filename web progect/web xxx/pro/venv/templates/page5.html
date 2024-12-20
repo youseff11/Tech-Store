@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="../static/style5.css">
+    <link rel="stylesheet" href="../static/style2.css">
+  
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"  aria-current="page" href="{{ url_for('page1') }}">Smart Tech Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active home" aria-current="page" href="{{ url_for('page2') }}">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle srevice" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item mobiles"  aria-current="page" href="{{ url_for('page3') }}">mobiles</a></li>
+                  <li><a class="dropdown-item tablets"  aria-current="page" href="{{ url_for('page4') }}">tablets</a></li>
+                  <li><a class="dropdown-item labtops"  aria-current="page" href="{{ url_for('page5') }}">labtops</a></li>
+                  <li><a class="dropdown-item PC"  aria-current="page" href="{{ url_for('page6') }}">PC</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('page7') }}">offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('page8') }}">Eclusive items</a>
+              </li>       
+            </ul>
+          </div>
+        </div>
+      </nav>
+<style>
+ 
+    @media (min-width: 992px) {
+      .navbar {
+            font-size: larger;
+            padding: 10px;
+        }
+        .box1_container{
+            width: 800px;
+            height: 200px;
+        }
+        .navbar {
+            font-size: larger;
+            padding: 10px;
+        }
+    
+    
+    
+        
+    }
+    @media (max-width: 991px) {
+      .cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+        .box1_container{
+          width: 90%;
+        }
+    }
+</style>
+</head>
+<body>
+
+
+  <div class="container">
+    <div class="cards">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L100.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Apple MacBook Pro </h4>
+            <p>Equipped with Apple's M3 chip, a vibrant Liquid Retina XDR display, and up to 18 hours of battery life. Ideal for creative professionals and power users. Approximate </p>
+            <p>1999$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L101.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Dell XPS 13</h4>
+            <p>Featuring a sleek design, and a stunning 13.4-inch display, the XPS 13 offers a balance of performance and portability. Suitable for professionals on the go. Approximate</p>
+            <p>1099$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L102.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Asus ROG Zephyrus G16</h4>
+            <p>This gaming laptop boasts an AMD Ryzen 9 HX 370 CPU, NVIDIA RTX 4070 GPU, and a 16-inch high-refresh-rate display, providing top-tier gaming performance</p>
+            <p>2300$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L103.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Lenovo ThinkPad X1</h4>
+            <p>Known for its durability and performance, it comes with Intel's latest processors, a 14-inch display, and robust security features, making it ideal for business professional</p>
+            <p>1499$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L104.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>HP Spectre x360 14</h4>
+            <p>A versatile 2-in-1 laptop with a 13.5-inch OLED display, Intel Core i7 processor, and long battery life. Perfect for users seeking flexibility and performance</p>
+            <p>1299$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L105.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Microsoft Surface </h4>
+            <p>Featuring a 13.8-inch PixelSense touchscreen, Qualcomm Snapdragon X Elite processor, and up to 64 GB RAM, this laptop is designed for seamless productivity</p>
+            <p>999$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L106.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Razer Blade 16
+            </h4>
+            <p>A powerhouse gaming laptop with a 16-inch display, Intel Core i9 processor, and NVIDIA RTX 4090 GPU, delivering exceptional gaming and creative performance</p>
+            <p>3499$</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/L107.jpeg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-back">
+            <h4>Acer Swift Go 14</h4>
+            <p>An affordable yet powerful laptop featuring an Intel Core Ultra 7 155H processor, 14-inch display, and lightweight design, making it suitable for everyday tasks and light productivity.</p>
+            <p>799$</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+  
+ 
+      
+    
+
+
+
+
+ 
+ 
+
+   
+    </div>
+
+
+    
+    
+  </div>
+  <div class="cartt">
+    <div id="cart">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="total-price">0</span>$</p>
+      <button class="creative-btn">Show Bill</button>
+    </div>
+    
+  </div>
+    <script src="{{ url_for('static', filename='js/script5.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script2.js') }}"></script> 
+
+ 
+</body>
+</html>

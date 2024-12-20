@@ -1,0 +1,100 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: 20px;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.card {
+  width: 220px;
+  height: 280px;
+  perspective: 1000px; /* لإنشاء تأثير ثلاثي الأبعاد */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d; /* للحفاظ على تأثير ثلاثي الأبعاد */
+  transition: transform 0.6s ease-in-out; /* تأثير الحركة */
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg); /* يدور الكارت 180 درجة */
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* إخفاء الجهة الخلفية عند الدوران */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-back h4{
+  font-size: 22px;
+  text-align: center;
+}
+
+.card-back p{
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-front {
+  background: #fff;
+}
+
+.card-back {
+  background: #333;
+  color: #fff;
+  transform: rotateY(180deg); /* الجهة الخلفية تبدأ مقلوبة */
+}
+.cartt{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center  ; 
+  background: linear-gradient(to right, rgb(47, 47, 172), rgb(225, 115, 225));
+  padding-bottom: 15px;
+}
+
+.creative-btn {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.creative-btn:hover {
+  background: linear-gradient(to left, #6a11cb, #2575fc);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.creative-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.delete-btn{
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers - Smart Tech Store</title>
+    <link rel="stylesheet" href="../static/style7.css">
+    <link rel="stylesheet" href="../static/style2.css">
+  <style>
+            .navbar {
+            font-size: larger;
+            padding: 10px;
+        }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" aria-current="page" href="{{ url_for('page1') }}">Smart Tech Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active home" aria-current="page" href="{{ url_for('page2') }}">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle srevice" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Service
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item mobiles" aria-current="page" href="{{ url_for('page3') }}">Mobiles</a></li>
+                  <li><a class="dropdown-item tablets" aria-current="page" href="{{ url_for('page4') }}">Tablets</a></li>
+                  <li><a class="dropdown-item labtops" aria-current="page" href="{{ url_for('page5') }}">Laptops</a></li>
+                  <li><a class="dropdown-item PC" aria-current="page" href="{{ url_for('page6') }}">PC</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('page7') }}">offers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{ url_for('page8') }}">Eclusive items</a>
+              </li>       
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="offer-container">
+        <h1 class="text-center">Special Offers at Smart Tech Store</h1>
+
+        <!-- Offer 1 -->
+        <div class="offer-box" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+              <h3>Exclusive Offer on Smartphones!</h3>
+              <p>Get the latest smartphones at unbeatable prices. Limited time offer, don't miss out!</p>
+              <p class="offer-price">$499.99</p>
+              <a href="{{ url_for('page3') }}" class="btn-offer">Shop Now</a>
+          </div>
+          <img src="{{ url_for('static', filename='imags/p2.jpg') }}" alt="My Image" width="280" height="180">
+      </div>
+      
+        <!-- Offer 2 -->
+        <div class="offer-box" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+              <h3>Special Deal on Laptops!</h3>
+              <p>Upgrade your work and entertainment with our powerful laptops, now at a discounted price.</p>
+              <p class="offer-price">$799.99</p>
+              <a href="{{ url_for('page5') }}" class="btn-offer">Shop Now</a>
+          </div>
+          <img src="{{ url_for('static', filename='imags/ll.jpeg') }}" alt="My Image" width="280" height="180">
+      </div>
+      
+        <!-- Offer 3 -->
+        <div class="offer-box" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+              <h3>Discount on Tablets for a Limited Time</h3>
+              <p>Enjoy our latest tablets with cutting-edge features, now available at a special price.</p>
+              <p class="offer-price">$299.99</p>
+              <a href="{{ url_for('page4') }}" class="btn-offer">Shop Now</a>
+          </div>
+          <img src="{{ url_for('static', filename='imags/tt.jpeg') }}" alt="Tablet Image" width="280" height="180">
+      </div>
+      
+
+        <!-- Offer 4 -->
+        <div class="offer-box" style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+              <h3>Save Big on PCs!</h3>
+              <p>Get the best performance for gaming and work with our high-end PCs, now on sale!</p>
+              <p class="offer-price">$999.99</p>
+              <a href="{{ url_for('page6') }}" class="btn-offer">Shop Now</a>
+          </div>
+          <img src="{{ url_for('static', filename='imags/pp.jpeg') }}" alt="PC Image" width="280" height="180">
+      </div>
+      
+
+    <script src="{{ url_for('static', filename='js/script7.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script2.js') }}"></script>
+</body>
+</html>

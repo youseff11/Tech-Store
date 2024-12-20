@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../static/style1.css">
+    <style>
+        @media (max-width: 991px) {
+          .login_form_container {
+           width: 90%;
+          }
+          .footer{
+           width: 90%;
+          }
+        }
+      </style>
+</head>
+<body>
+
+    <div class="login_form_container">
+        <div class="login_form">
+            <h2>SignUp</h2>
+            
+            <!-- عرض رسائل الخطأ أو النجاح -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <ul>
+                    {% for category, message in messages %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+            {% endwith %}
+            
+            <form method="POST" action="{{ url_for('signup') }}">
+                <div class="input_group">
+                    <i class="fa fa-user"></i>
+                    <input 
+                        type="text" 
+                        name="username" 
+                        placeholder="Enter Name" 
+                        class="input_text" 
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                <div class="input_group">
+                    <i class="fa fa-unlock-alt"></i>
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Create Password"
+                        class="input_text"
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                <div class="input_group">
+                    <i class="fa fa-unlock-alt"></i>
+                    <input
+                        type="password"
+                        name="confirm_password"
+                        placeholder="Confirm Password"
+                        class="input_text"
+                        autocomplete="off"
+                        required
+                    />
+                </div>
+                <button type="submit" class="fotter">Submit</button>
+            </form>
+            
+            <!-- رابط للتوجه لصفحة تسجيل الدخول -->
+            <div class="footer-txt">
+                <p>Already have an account?</p>
+                <a href="{{ url_for('page1') }}">Login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
