@@ -182,3 +182,36 @@ background-color: #0000001b;
     transform: rotateY(180deg);
   }
   
+  .navbar .btn-outline-success {
+    border-radius: 15px;
+  }
+  
+  
+  #cart-dropdown {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    width: 350px;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  #cart-dropdown li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    color: black;
+  }
+  
+  #cart-dropdown li:last-child {
+    border-bottom: none;
+  }
+  
+  #cart-dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+  }
+  

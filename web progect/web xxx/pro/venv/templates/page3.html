@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <link rel="stylesheet" href="../static/style3.css">
     <link rel="stylesheet" href="../static/style2.css">
+    <link rel="stylesheet" href="../static/style3.css">
+
   
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -40,7 +41,9 @@
               </li>       
               <li class="nav-item">
                 <a class="nav-link" href="#" id="cart-link">My Cart (<span id="cart-count">0</span>)</a>
-            </li>
+                <ul id="cart-dropdown" class="dropdown-menu" style="display: none;">
+                  <!-- سيتم ملء العناصر هنا باستخدام JavaScript -->
+                </ul>
             <li class="nav-item">
               <form class="d-flex" action="#" method="GET">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
@@ -97,14 +100,30 @@
       <div class="card">
         <div class="card-inner">
           <div class="card-front">
-            <img src="../static/imags/a2.jpeg" class="card-img-top" alt="photo">
+            <img src="../static/imags/z1.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>iPhone 14 Pro Max</h4>
-            <p> Apple's flagship phone with a Super Retina XDR display, A16 Bionic chip, and advanced camera system.
-            </p>
-            <p>750$</p>
-            <button class="add-to-cart" data-name="iPhone 14 Pro Max" data-price="750">Add to Cart</button>
+            <h4>iPhone 15 Pro Max</h4>
+            <p> 6.7-inch Super Retina XDR display, A17 Pro chip, 48MP main camera, titanium design, and USB-C port.</p>
+            <p>1199$</p>
+            <button class="add-to-cart" data-name="iPhone 15 Pro Max" data-price="1199">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/z3.jpeg" class="card-img-top" alt="photo">
+          </div>
+          <div class="card-back">
+            <h4> Samsung Galaxy S23 Ultra</h4>
+           <p>6.8-inch QHD+ AMOLED display, Snapdragon 8 Gen 2 chip, 200MP main camera, and integrated S Pen
+          </p>
+          <p>1199$</p>
+          <button class="add-to-cart" data-name="Samsung Galaxy S23 Ultra" data-price="1199">Add to Cart</button>
+
+
           </div>
         </div>
       </div>
@@ -115,28 +134,11 @@
             <img src="../static/imags/a1.jpg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4> Sony Xperia 1 IV</h4>
-           <p>A premium phone with a 4K HDR OLED display, Snapdragon 8 Gen 2 processor, and advanced camera features.
-          </p>
-          <p>780$</p>
-          <button class="add-to-cart" data-name="Sony Xperia 1 IV" data-price="780">Add to Cart</button>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="../static/imags/a3.jpeg" class="card-img-top" alt="photo">
-          </div>
-          <div class="card-back">
-            <h4>infinix not 10 plus</h4>
-            <p> Known for its excellent camera performance and stock Android experience, powered by Google Tensor chip.
+            <h4>Google Pixel 8 Pro</h4>
+            <p> 6.7-inch LTPO OLED display, Tensor G3 processor, triple-camera system with a 50MP main sensor, and AI features
             </p>
-            <p>800$</p>
-          <button class="add-to-cart" data-name="infinix not 10 plus" data-price="800">Add to Cart</button>
+            <p>999$</p>
+          <button class="add-to-cart" data-name="Google Pixel 8 Pro" data-price="999">Add to Cart</button>
 
             
 
@@ -147,14 +149,13 @@
       <div class="card">
         <div class="card-inner">
           <div class="card-front">
-            <img src="../static/imags/a4.webp" class="card-img-top" alt="photo">
+            <img src="../static/imags/z8.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>iPhone 15 pro</h4>
-            <p>Features a 120Hz Fluid AMOLED display, Snapdragon 8 Gen 2 processor, and fast charging capabilities.
-            </p>
-            <p>950$</p>
-          <button class="add-to-cart" data-name="iPhone 15 pro" data-price="950">Add to Cart</button>
+            <h4>Xiaomi 13 Ultra</h4>
+            <p>6.73-inch AMOLED display, Snapdragon 8 Gen 2 chip, and quad-camera setup featuring a 50MP main sensor</p>
+            <p>1299$</p>
+          <button class="add-to-cart" data-name="Xiaomi 13 Ultra" data-price="1299">Add to Cart</button>
 
 
           </div>
@@ -164,48 +165,14 @@
       <div class="card">
         <div class="card-inner">
           <div class="card-front">
-            <img src="../static/imags/a5.jpeg" class="card-img-top" alt="photo">
+            <img src="../static/imags/z9.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>vivo l12</h4>
-            <p>Offers a high-resolution AMOLED display, Dimensity 9000 processor, and a sleek design.
+            <h4>OnePlus 11 Pro</h4>
+            <p>6.7-inch QHD+ AMOLED display, Snapdragon 8 Gen 2 chip, Hasselblad-tuned cameras,100W fast charging.
             </p>
-            <p>1100$</p>
-          <button class="add-to-cart" data-name="vivo l12" data-price="1100">Add to Cart</button>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="../static/imags/a6.jpeg" class="card-img-top" alt="photo">
-          </div>
-          <div class="card-back">
-            <h4>Samsung Galaxy S23 FE</h4>
-            <p>A versatile phone with a 120Hz Dynamic AMOLED display, Snapdragon 8 Gen 2 processor, and triple camera setup.
-            </p>
-            <p>900$</p>
-          <button class="add-to-cart" data-name="Samsung Galaxy S23 FE" data-price="980">Add to Cart</button>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="../static/imags/a7.webp" class="card-img-top" alt="photo">
-          </div>
-          <div class="card-back">
-            <h4>motorola Edge 30</h4>
-            <p> Features a 144Hz OLED display, Snapdragon 8 Gen 1 processor, and a triple camera setup.
-            </p>
-            <p>650$</p>
-          <button class="add-to-cart" data-name="motorola Edge 30" data-price="650">Add to Cart</button>
+            <p>1299$</p>
+          <button class="add-to-cart" data-name="OnePlus 11 Pro" data-price="1299">Add to Cart</button>
 
 
           </div>
@@ -218,11 +185,45 @@
             <img src="../static/imags/a8.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>iPhone11 pro</h4>
-            <p>Known for its unique design, 120Hz AMOLED display, and strong performance with Snapdragon 8 Gen 1.
+            <h4>iphone mini 14</h4>
+            <p>6.2-inch Super Retina XDR display, A15 Pro chip, 32MP main camera, titanium design, and USB-C port
             </p>
-            <p>700$</p>
-          <button class="add-to-cart" data-name="iPhone11 pro" data-price="650">Add to Cart</button>
+            <p>699$</p>
+          <button class="add-to-cart" data-name="iphone mini 14" data-price="699">Add to Cart</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/z12.jpeg" class="card-img-top" alt="photo">
+          </div>
+          <div class="card-back">
+            <h4>Oppo Find X6 Pro</h4>
+            <p>  6.82-inch AMOLED display, Dimensity 9200 processor, triple-camera setup with 50MP sensors, and a premium design.
+            </p>
+            <p>1399$</p>
+          <button class="add-to-cart" data-name="Oppo Find X6 Pro" data-price="1399">Add to Cart</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../static/imags/z13.jpeg" class="card-img-top" alt="photo">
+          </div>
+          <div class="card-back">
+            <h4>Asus ROG Phone 7 Ultimate</h4>
+            <p>6.78-inch AMOLED display, Snapdragon 8 Gen 2 chip, 165Hz refresh rate, and gaming-specific features like AeroActive cooling.
+            </p>
+            <p>1799$</p>
+          <button class="add-to-cart" data-name="Asus ROG Phone 7 Ultimate" data-price="1799">Add to Cart</button>
 
             
 
@@ -233,14 +234,14 @@
       <div class="card">
         <div class="card-inner">
           <div class="card-front">
-            <img src="../static/imags/a9.webp" class="card-img-top" alt="photo">
+            <img src="../static/imags/z14.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>Samsung s23 fe</h4>
+            <h4>Vivo X90 Pro+</h4>
             <p>Offers a 120Hz AMOLED display, Dimensity 9000 processor, and a stylish design.
             </p>
-            <p>850$</p>
-          <button class="add-to-cart" data-name="Samsung s23 fe" data-price="850">Add to Cart</button>
+            <p>1799$</p>
+          <button class="add-to-cart" data-name="Vivo X90 Pro+" data-price="1799">Add to Cart</button>
 
 
           </div>
@@ -250,14 +251,14 @@
       <div class="card">
         <div class="card-inner">
           <div class="card-front">
-            <img src="../static/imags/a10.webp" class="card-img-top" alt="photo">
+            <img src="../static/imags/z15.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>Huawei P50 Pro</h4>
-            <p>Features a 120Hz OLED display, Snapdragon 888 processor, and a quad-camera setup.
+            <h4>Samsung Galaxy Z Fold 5</h4>
+            <p>7.6-inch AMOLED main display, Snapdragon 8 Gen 2 chip, multitasking features, and water resistance.
             </p>
-            <p>500$</p>
-          <button class="add-to-cart" data-name="Huawei P50 Pro" data-price="500">Add to Cart</button>
+            <p>599$</p>
+          <button class="add-to-cart" data-name="Samsung Galaxy Z Fold 5" data-price="599">Add to Cart</button>
 
 
           </div>
@@ -288,9 +289,7 @@
 
     
     
-  </div>
     <script src="{{ url_for('static', filename='js/script3.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/script2.js') }}"></script> 
 
  
 </body>

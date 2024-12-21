@@ -39,7 +39,9 @@
               </li>  
               <li class="nav-item">
                 <a class="nav-link" href="#" id="cart-link">My Cart (<span id="cart-count">0</span>)</a>
-            </li> 
+                <ul id="cart-dropdown" class="dropdown-menu" style="display: none;">
+                  <!-- سيتم ملء العناصر هنا باستخدام JavaScript -->
+                </ul>
             <li class="nav-item">
               <form class="d-flex" action="#" method="GET">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
@@ -241,7 +243,6 @@
     
   </div>
     <script src="{{ url_for('static', filename='js/script5.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/script2.js') }}"></script> 
 
  
 </body>
