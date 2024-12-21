@@ -36,7 +36,16 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ url_for('page8') }}">Eclusive items</a>
-              </li>       
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="cart-link">My Cart (<span id="cart-count">0</span>)</a>
+            </li> 
+            <li class="nav-item">
+              <form class="d-flex" action="#" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>        
             </ul>
           </div>
         </div>
@@ -86,8 +95,10 @@
           </div>
           <div class="card-back">
             <h4>Apple MacBook Pro </h4>
-            <p>Equipped with Apple's M3 chip, a vibrant Liquid Retina XDR display, and up to 18 hours of battery life. Ideal for creative professionals and power users. Approximate </p>
+            <p> XDR display, and up to 18 hours of battery life. Ideal for creative professionals and power users </p>
             <p>1999$</p>
+            <button class="add-to-cart" data-name="Apple MacBook Pro" data-price="1999">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -99,8 +110,10 @@
           </div>
           <div class="card-back">
             <h4>Dell XPS 13</h4>
-            <p>Featuring a sleek design, and a stunning 13.4-inch display, the XPS 13 offers a balance of performance and portability. Suitable for professionals on the go. Approximate</p>
+            <p> stunning 13.4-inch display, offers a balance of performance and portability. Suitable for professionals</p>
             <p>1099$</p>
+            <button class="add-to-cart" data-name="Dell XPS 13" data-price="1099">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -112,8 +125,10 @@
           </div>
           <div class="card-back">
             <h4>Asus ROG Zephyrus G16</h4>
-            <p>This gaming laptop boasts an AMD Ryzen 9 HX 370 CPU, NVIDIA RTX 4070 GPU, and a 16-inch high-refresh-rate display, providing top-tier gaming performance</p>
+            <p> Ryzen 9 HX 370 , NVIDIA RTX 4070 GPU,high-refresh-rate display, providing top-tier gaming performance</p>
             <p>2300$</p>
+            <button class="add-to-cart" data-name="Asus ROG Zephyrus G16" data-price="2300">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -125,8 +140,10 @@
           </div>
           <div class="card-back">
             <h4>Lenovo ThinkPad X1</h4>
-            <p>Known for its durability and performance, it comes with Intel's latest processors, a 14-inch display, and robust security features, making it ideal for business professional</p>
+            <p> comes with Intel's latest processors, a 14-inch display, and security features, making it ideal for business professional</p>
             <p>1499$</p>
+            <button class="add-to-cart" data-name="Lenovo ThinkPad X1" data-price="1499">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -138,8 +155,10 @@
           </div>
           <div class="card-back">
             <h4>HP Spectre x360 14</h4>
-            <p>A versatile 2-in-1 laptop with a 13.5-inch OLED display, Intel Core i7 processor, and long battery life. Perfect for users seeking flexibility and performance</p>
+            <p>2-in-1 laptop with a 13.5-inch OLED display, Intel Core i7 processor, and long battery life. Perfect for performance</p>
             <p>1299$</p>
+            <button class="add-to-cart" data-name="HP Spectre x360 14" data-price="1299">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -151,8 +170,10 @@
           </div>
           <div class="card-back">
             <h4>Microsoft Surface </h4>
-            <p>Featuring a 13.8-inch PixelSense touchscreen, Qualcomm Snapdragon X Elite processor, and up to 64 GB RAM, this laptop is designed for seamless productivity</p>
+            <p>touchscreen, Qualcomm Snapdragon processor, and 64 GB RAM, this laptop is designed for seamless productivity</p>
             <p>999$</p>
+            <button class="add-to-cart" data-name="Microsoft Surface" data-price="999">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -165,8 +186,10 @@
           <div class="card-back">
             <h4>Razer Blade 16
             </h4>
-            <p>A powerhouse gaming laptop with a 16-inch display, Intel Core i9 processor, and NVIDIA RTX 4090 GPU, delivering exceptional gaming and creative performance</p>
+            <p>gaming laptop with 16-inch display, Intel Core i9 processor,NVIDIA RTX 4090,exceptional creative performance</p>
             <p>3499$</p>
+            <button class="add-to-cart" data-name="Razer Blade 16" data-price="3499">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -178,8 +201,10 @@
           </div>
           <div class="card-back">
             <h4>Acer Swift Go 14</h4>
-            <p>An affordable yet powerful laptop featuring an Intel Core Ultra 7 155H processor, 14-inch display, and lightweight design, making it suitable for everyday tasks and light productivity.</p>
+            <p>Intel Core Ultra 7 155H processor, 14-inch display, and lightweight design, suitable for tasks and light productivity.</p>
             <p>799$</p>
+            <button class="add-to-cart" data-name="Acer Swift Go 14" data-price="799">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -206,10 +231,12 @@
   </div>
   <div class="cartt">
     <div id="cart">
-      <h3>Your Cart</h3>
-      <ul id="cart-items"></ul>
-      <p>Total: <span id="total-price">0</span>$</p>
-      <button class="creative-btn">Show Bill</button>
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">0</span>$</p>
+        <button class="creative-btn" id="show-bill">Show Bill</button>
+        <button class="creative-btn" id="reset-cart">Reset Cart</button>
+
     </div>
     
   </div>

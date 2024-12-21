@@ -36,7 +36,16 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ url_for('page8') }}">Eclusive items</a>
-              </li>       
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="cart-link">My Cart (<span id="cart-count">0</span>)</a>
+            </li>    
+            <li class="nav-item">
+              <form class="d-flex" action="#" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>    
             </ul>
           </div>
         </div>
@@ -86,8 +95,10 @@
           </div>
           <div class="card-back">
             <h4>Corsair Vengeance i7500</h4>
-            <p>Equipped with an Intel Core i9-14900K processor, this gaming PC offers top-notch build quality and exceptional performance for demanding applications and gaming</p>
+            <p>Intel Core i9-14900K processor, gaming PC offers top-notch build quality and exceptional performance </p>
             <p>1700$</p>
+            <button class="add-to-cart" data-name="Corsair Vengeance i7500" data-price="1700">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -99,8 +110,10 @@
           </div>
           <div class="card-back">
             <h4>iBuyPower Y60</h4>
-            <p>A mid-range gaming PC that balances performance and value, suitable for gamers seeking reliable hardware without a premium price tag</p>
+            <p>gaming PC that balances performance , suitable for gamers seeking reliable hardware without a premium price tag</p>
             <p>1400$</p>
+            <button class="add-to-cart" data-name="iBuyPower Y60" data-price="1400">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -112,8 +125,10 @@
           </div>
           <div class="card-back">
             <h4>Dell XPS Desktop</h4>
-            <p>This versatile desktop is ideal for both work and play, featuring the latest processors and a sleek design that fits seamlessly into any environment</p>
+            <p>ideal for both work and play, featuring the latest processors and a sleek design that fits seamlessly</p>
             <p>1199$</p>
+            <button class="add-to-cart" data-name="Dell XPS Desktop" data-price="1199">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -125,8 +140,10 @@
           </div>
           <div class="card-back">
             <h4>Apple Mac Mini M4</h4>
-            <p>Combining power and affordability, the Mac Mini M4 features Apple's latest M4 chip, offering impressive performance in a compact form factor.</p>
+            <p>Combining power and affordability, the Mac Mini M4 features Apple's latest M4 chip, offering impressive performance</p>
             <p>2300$</p>
+            <button class="add-to-cart" data-name="Apple Mac Mini M4" data-price="2300">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -138,8 +155,10 @@
           </div>
           <div class="card-back">
             <h4>HP Omen 30L Gaming</h4>
-            <p>Featuring an NVIDIA GeForce RTX 3090 graphics card and a 10th Generation Intel Core i9 processor, this gaming desktop delivers exceptional performance for high-end gaming and content creation</p>
+            <p>Featuring NVIDIA GeForce RTX 3090 graphics card 10th Generation Intel Core i9 processor</p>
             <p>1799$</p>
+            <button class="add-to-cart" data-name="HP Omen 30L Gaming" data-price="1799">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -151,8 +170,10 @@
           </div>
           <div class="card-back">
             <h4>Skytech Nebula Gaming</h4>
-            <p>Powered by a Ryzen 5 5600 processor and NVIDIA RTX 3050 graphics, this gaming PC offers solid performance for gamers seeking a balance between cost and capability</p>
+            <p>Powered by a Ryzen 5 5600 processor and NVIDIA RTX 3050 graphics, this gaming PC offers solid performance</p>
             <p>1399$</p>
+            <button class="add-to-cart" data-name="Skytech Nebula Gaming" data-price="1399">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -164,8 +185,10 @@
           </div>
           <div class="card-back">
             <h4>Alienware Aurora R16</h4>
-            <p>Sporting a new, sleeker, and more compact chassis, this high-end gaming PC boasts an impressive cooling system and top-tier components for an unparalleled gaming experience.</p>
+            <p>Sporting a new, sleeker, and more compact chassis, unparalleled gaming experience.</p>
             <p>1999$</p>
+            <button class="add-to-cart" data-name="Alienware Aurora R16" data-price="1999">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -177,8 +200,10 @@
           </div>
           <div class="card-back">
             <h4>Lenovo Legion Tower 5i</h4>
-            <p>A solid performer for gaming, this mid-range gaming PC can tackle demanding games on Ultra settings without costing a fortune. </p>
+            <p>A solid performer for gaming, this mid-range gaming PC can tackle demanding games on Ultra settings </p>
             <p>1300$</p>
+            <button class="add-to-cart" data-name="Lenovo Legion Tower 5i" data-price="1300">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -195,10 +220,12 @@
   </div>
   <div class="cartt">
     <div id="cart">
-      <h3>Your Cart</h3>
-      <ul id="cart-items"></ul>
-      <p>Total: <span id="total-price">0</span>$</p>
-      <button class="creative-btn">Show Bill</button>
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">0</span>$</p>
+        <button class="creative-btn" id="show-bill">Show Bill</button>
+        <button class="creative-btn" id="reset-cart">Reset Cart</button>
+
     </div>
     
 

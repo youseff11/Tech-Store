@@ -51,3 +51,4 @@ images[2].classList.add('inactive');
 images[3].classList.add('inactive');
 images[4].classList.add('previous');
 images[0].classList.add('active');
+

@@ -67,7 +67,8 @@
   padding-bottom: 15px;
 }
 
-.creative-btn {
+.creative-btn,
+.add-to-cart {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: white;
   font-size: 16px;
@@ -80,16 +81,19 @@
   transition: all 0.3s ease-in-out;
 }
 
-.creative-btn:hover {
-  background: linear-gradient(to left, #6a11cb, #2575fc);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+.creative-btn:hover,
+.add-to-cart:hover {
+  background: linear-gradient(to left, #6a11cb, #2575fc);  /* تدرج لوني من اليمين لليسار */
+  transform: translateY(-3px);  /* رفع العنصر 3 بكسل للأعلى */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);  /* إضافة ظل */
 }
 
-.creative-btn:active {
+.creative-btn:active,
+.add-to-cart:active {
   transform: translateY(0);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
+
 .delete-btn{
   border: none;
   background-color: red;
@@ -97,4 +101,16 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 10px;
+}
+#cart-items li{
+  margin-bottom: 1rem;
+}
+
+#search-input{
+  background-color: white;
+  border-radius: 15px;
+  color: black;
+}
+.navbar .btn-outline-success {
+  border-radius: 15px;
 }

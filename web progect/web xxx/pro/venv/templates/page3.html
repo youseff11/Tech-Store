@@ -16,6 +16,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
               <li class="nav-item">
                 <a class="nav-link active home" aria-current="page" href="{{ url_for('page2') }}">Home</a>
               </li>
@@ -37,6 +38,15 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ url_for('page8') }}">Eclusive items</a>
               </li>       
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="cart-link">My Cart (<span id="cart-count">0</span>)</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" action="#" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>
             </ul>
           </div>
         </div>
@@ -94,6 +104,7 @@
             <p> Apple's flagship phone with a Super Retina XDR display, A16 Bionic chip, and advanced camera system.
             </p>
             <p>750$</p>
+            <button class="add-to-cart" data-name="iPhone 14 Pro Max" data-price="750">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -108,6 +119,8 @@
            <p>A premium phone with a 4K HDR OLED display, Snapdragon 8 Gen 2 processor, and advanced camera features.
           </p>
           <p>780$</p>
+          <button class="add-to-cart" data-name="Sony Xperia 1 IV" data-price="780">Add to Cart</button>
+
 
           </div>
         </div>
@@ -123,6 +136,9 @@
             <p> Known for its excellent camera performance and stock Android experience, powered by Google Tensor chip.
             </p>
             <p>800$</p>
+          <button class="add-to-cart" data-name="infinix not 10 plus" data-price="800">Add to Cart</button>
+
+            
 
           </div>
         </div>
@@ -138,6 +154,8 @@
             <p>Features a 120Hz Fluid AMOLED display, Snapdragon 8 Gen 2 processor, and fast charging capabilities.
             </p>
             <p>950$</p>
+          <button class="add-to-cart" data-name="iPhone 15 pro" data-price="950">Add to Cart</button>
+
 
           </div>
         </div>
@@ -153,6 +171,8 @@
             <p>Offers a high-resolution AMOLED display, Dimensity 9000 processor, and a sleek design.
             </p>
             <p>1100$</p>
+          <button class="add-to-cart" data-name="vivo l12" data-price="1100">Add to Cart</button>
+
 
           </div>
         </div>
@@ -168,6 +188,8 @@
             <p>A versatile phone with a 120Hz Dynamic AMOLED display, Snapdragon 8 Gen 2 processor, and triple camera setup.
             </p>
             <p>900$</p>
+          <button class="add-to-cart" data-name="Samsung Galaxy S23 FE" data-price="980">Add to Cart</button>
+
 
           </div>
         </div>
@@ -183,6 +205,8 @@
             <p> Features a 144Hz OLED display, Snapdragon 8 Gen 1 processor, and a triple camera setup.
             </p>
             <p>650$</p>
+          <button class="add-to-cart" data-name="motorola Edge 30" data-price="650">Add to Cart</button>
+
 
           </div>
         </div>
@@ -194,10 +218,13 @@
             <img src="../static/imags/a8.jpeg" class="card-img-top" alt="photo">
           </div>
           <div class="card-back">
-            <h4>iPhone11pro</h4>
+            <h4>iPhone11 pro</h4>
             <p>Known for its unique design, 120Hz AMOLED display, and strong performance with Snapdragon 8 Gen 1.
             </p>
             <p>700$</p>
+          <button class="add-to-cart" data-name="iPhone11 pro" data-price="650">Add to Cart</button>
+
+            
 
           </div>
         </div>
@@ -213,6 +240,8 @@
             <p>Offers a 120Hz AMOLED display, Dimensity 9000 processor, and a stylish design.
             </p>
             <p>850$</p>
+          <button class="add-to-cart" data-name="Samsung s23 fe" data-price="850">Add to Cart</button>
+
 
           </div>
         </div>
@@ -228,6 +257,8 @@
             <p>Features a 120Hz OLED display, Snapdragon 888 processor, and a quad-camera setup.
             </p>
             <p>500$</p>
+          <button class="add-to-cart" data-name="Huawei P50 Pro" data-price="500">Add to Cart</button>
+
 
           </div>
         </div>
@@ -244,14 +275,16 @@
 
 
     
-   <div class="cartt">
-    <div id="cart">
-      <h3>Your Cart</h3>
-      <ul id="cart-items"></ul>
-      <p>Total: <span id="total-price">0</span>$</p>
-      <button class="creative-btn">Show Bill</button>
-    </div>
-   </div>
+    <div class="cartt">
+      <div id="cart">
+          <h3>Your Cart</h3>
+          <ul id="cart-items"></ul>
+          <p>Total: <span id="total-price">0</span>$</p>
+          <button class="creative-btn" id="show-bill">Show Bill</button>
+          <button class="creative-btn" id="reset-cart">Reset Cart</button>
+      </div>
+  </div>
+  
 
     
     

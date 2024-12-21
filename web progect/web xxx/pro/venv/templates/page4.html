@@ -36,7 +36,16 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ url_for('page8') }}">Eclusive items</a>
-              </li>       
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="cart-link">My Cart (<span id="cart-count">0</span>)</a>
+            </li>
+            <li class="nav-item">
+              <form class="d-flex" action="#" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </li>    
             </ul>
           </div>
         </div>
@@ -88,8 +97,9 @@
             <h4>Microsoft Surface Pro 9</h4>
             <p>13-inch PixelSense touchscreen display.
               Intel Core i7 processor with up to 32 GB RAM.
-              Versatile as a tablet or laptop with Surface Keyboard.</p>
+             </p>
             <p>999$</p>
+            <button class="add-to-cart" data-name="Microsoft Surface Pro 9" data-price="999">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -103,8 +113,10 @@
             <h4>Lenovo Tab P12 Pro</h4>
             <p>12.6-inch AMOLED display with HDR10+.
               Qualcomm Snapdragon 870 processor.
-              Long battery life and keyboard accessory support</p>
+              Long battery life</p>
             <p>699$</p>
+            <button class="add-to-cart" data-name="Lenovo Tab P12 Pro" data-price="699">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -117,9 +129,10 @@
           <div class="card-back">
             <h4> Google Pixel Tablet</h4>
             <p>Tensor G2 processor for smart features and AI integration.
-              11-inch display with high resolution.
               Dock with speaker for smart home functionality.</p>
             <p>499$</p>
+            <button class="add-to-cart" data-name="Google Pixel Tablet" data-price="499">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -133,8 +146,10 @@
             <h4>Dell Latitude 7320 Detachable</h4>
             <p>13-inch FHD display with anti-reflective coating.
               Intel Core i7 with vPro for security and power.
-              Lightweight design with enterprise-grade features.</p>
+             </p>
             <p>1299$</p>
+            <button class="add-to-cart" data-name="Dell Latitude 7320 Detachable" data-price="1299">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -147,9 +162,11 @@
           <div class="card-back">
             <h4>Xiaomi Pad 6 Pro</h4>
             <p>11-inch AMOLED display with 120Hz refresh rate.
-              Snapdragon 8+ Gen 1 processor.
+              Snapdragon 8+ 
               Up to 12 GB RAM and 512 GB storage.</p>
             <p>599$</p>
+            <button class="add-to-cart" data-name="Xiaomi Pad 6 Pro" data-price="599">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -162,10 +179,12 @@
           </div>
           <div class="card-back">
             <h4>Asus ROG Flow Z13 </h4>
-            <p>13.4-inch QHD+ display with 120Hz refresh rate.
-              Intel Core i9 processor and NVIDIA RTX 4070 GPU.
-              Designed for gaming with detachable keyboard.</p>
+            <p>13.4-inch QHD+ display with 120Hz
+              Intel Core i9 processor NVIDIA RTX 4070 GPU.
+              Designed for gaming.</p>
             <p>1799$</p>
+            <button class="add-to-cart" data-name="Asus ROG Flow Z13" data-price="1799">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -178,10 +197,12 @@
           </div>
           <div class="card-back">
             <h4>Galaxy Tab S9 Ultra</h4>
-            <p>14.6-inch AMOLED display with 120Hz refresh rate.
-              Snapdragon 8 Gen 2 chipset, up to 16 GB RAM.
-              Comes with an S Pen for drawing and productivity.</p>
+            <p>14-inch AMOLED display with 120Hz 
+              Snapdragon 8 Gen 2 chipset, 16 GB RAM.
+              Comes with an S Pen for drawing</p>
             <p>1199$</p>
+            <button class="add-to-cart" data-name="Galaxy Tab S9 Ultra" data-price="1199">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -195,8 +216,10 @@
           <div class="card-back">
             <h4>Huawei MatePad Pro</h4>
             <p> 144Hz refresh rate.
-              Kirin 9000s Processor: Delivers exceptional performance for multitasking and gaming 12 GB RAM  Battery: 10,000 mAh with 88W fast charging.</p>
+              Kirin 9000s Processor:12 GB RAM  Battery: 10,000 mAh with 88W fast charging.</p>
             <p>999$</p>
+            <button class="add-to-cart" data-name="Huawei MatePad Pro" data-price="999">Add to Cart</button>
+
           </div>
         </div>
       </div>
@@ -214,13 +237,15 @@
   </div>
   <div class="cartt">
     <div id="cart">
-      <h3>Your Cart</h3>
-      <ul id="cart-items"></ul>
-      <p>Total: <span id="total-price">0</span>$</p>
-      <button class="creative-btn">Show Bill</button>
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: <span id="total-price">0</span>$</p>
+        <button class="creative-btn" id="show-bill">Show Bill</button>
+        <button class="creative-btn" id="reset-cart">Reset Cart</button>
+
     </div>
-  </div>
-    
+</div>
+
 
     <script src="{{ url_for('static', filename='js/script4.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script2.js') }}"></script> 
