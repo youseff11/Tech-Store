@@ -6,8 +6,17 @@ The internal pages of the site feature innovative designs, such as interactive c
 
 In short, Smart Tech Store is your ideal destination for selecting tech devices that meet your needs and help you get the latest products at the best prices.
 
-https://github.com/user-attachments/assets/b890f2ca-0ee1-4c3b-82ea-1b729343bb91
+video of the run :
+https://github.com/user-attachments/assets/4ba175cb-42c6-4a55-97be-fc6f40a0f587
 
-![Screenshot (313)](https://github.com/user-attachments/assets/ac0b1f25-4670-4ab2-9f2a-120add50f35b)
+screen shots from the run:
 
-![Screenshot (307)](https://github.com/user-attachments/assets/d67e7546-c18b-48d0-a5ae-2bf6041f4cdf)
+![Screenshot (321)](https://github.com/user-attachments/assets/c52a9077-243c-4641-a7dc-8df9df237b97)
+![Screenshot (322)](https://github.com/user-attachments/assets/9b296d79-5955-4370-8068-f22ae6b6d75e)
+![Screenshot (323)](https://github.com/user-attachments/assets/eab14d2a-f866-43fd-aa54-0be2357dc107)
+![Screenshot (324)](https://github.com/user-attachments/assets/43cc6ed1-93fb-4bd1-8b46-c149dd63595b)
+![Screenshot (325)](https://github.com/user-attachments/assets/7d6b2d0d-6ba4-4e4f-b28f-9176a5edbb61)
+![Screenshot (326)](https://github.com/user-attachments/assets/36f55089-5e51-436e-b547-840651d654f0)
+![Screenshot (327)](https://github.com/user-attachments/assets/22ff76b6-3550-4ac7-ad4f-b0604de9b64a)
+
+
